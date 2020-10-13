@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Spartan:wght@500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="circle-wrapper">
+        <div class="circle circle-homepage"></div>
+        <!--<div class="circle-position-with-card"></div>-->
+    </div>
+
+    <div class="container"></div>
+    <div class="header">
+        <div class="header-logo">
+            <p>H<span>CARD</span></p>
+        </div>
+
+        <ul class="nav">
+            <li class="nav-link" onclick="console.log(this.innerHTML)">Store</li>
+            <li class="nav-link">About</li>
+            <li class="nav-link">Pack</li>
+            <li class="nav-link">Buy</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1 class="title">The Game of the year</h1>
+        <p class="description">the industry's standard dummy text ever since the 1500s,
+            where an unknown printer took a galley af type and
+            scrambled it to take o type specimen book.</p>
+        <div id="exploreBtn" class="explore-btn">
+            <div class="explore-btn-icon"><i class="fa fa-angle-down"></i></div>
+            <button>Explore</button>
+        </div>
+    </div>
+
+
+    <div class="main-img-wrapper">
+        <img class="main-img" src="img/all_cards.jpg"/>
+    </div>
+
+    <div class="content-card">
+        <h1 id="cardTitle" class="card-name">Cat Witch</h1>
+        <p id="cardDescription" class="card-description">It was popularised in the 1960s with the release of
+            Letroset sheets containing Lorem ipsum passages,
+            and more recently with desktop publishing
+            software</p>
+        <div class="card-number"><p id="cardNumber">01</p></div>
+    </div>
+
+    <div class="single-img-wrapper">
+        <img id="card" class="single-img" src="img/card1.png"/>
+        <button id="carouselBtn">next</button>
+        <img class="single-img-next" id="cardNext" src="img/card2.png"/>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="https://use.fontawesome.com/c44a79e7ba.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
