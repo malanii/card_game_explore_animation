@@ -139,7 +139,7 @@ function toHomePage() {
 
     document.querySelector('.header').style.backgroundImage = 'url("img/nav_element.png")';
 
-    gsap.to(".main-img", {y: 0, opacity: 1, duration: 0.5,});
+    gsap.to(".main-img", {y: 0, opacity: 1, duration: 1,});
     gsap.to(".content", {y: 0, opacity: 1, duration: 1,});
 
     backgroundColor('.wrapper', '#161010');

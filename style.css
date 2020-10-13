@@ -1,7 +1,12 @@
 body {
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -16,7 +21,6 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    /*position: static;*/
     width: 95%;
     height: 84vh;
     border: 1.5vh solid #223744;
@@ -26,36 +30,30 @@ body {
 }
 
 .header {
-    /*width: 90%;*/
-    /*margin: auto;*/
     display: flex;
     justify-content: space-between;
-    /*border: 1px solid white;*/
     padding: 13vh 3vh 0 0;
     background-image: url("img/nav_element.png");
     background-repeat: no-repeat;
     background-position: right;
-    /*position: relative;*/
-    /*z-index: 0;*/
     margin-left: 15%;
 }
 
 .header-logo {
+    width: 50%;
+    z-index: 91;
+}
+.header-logo a{
     font-family: 'Spartan', sans-serif;
     color: #ffe900;
     font-size: 40px;
     text-align: left;
-    width: 50%;
-    z-index: 91;
 }
-
 .header-logo span {
     color: white;
-
 }
 
 .nav {
-
     display: flex;
     justify-content: center;
     width: 50%;
@@ -126,7 +124,7 @@ body {
 .title {
     font-size: 70px;
     color: white;
-    padding: 30% 0 2%;
+    padding: 25% 0 2%;
     opacity: 1;
 }
 
@@ -144,13 +142,10 @@ body {
 .content-card {
     display: none;
     width: 22%;
-    /*text-align: left;*/
     margin-left: 15%;
     z-index: 1000;
     position: absolute;
     top: 30vh;
-    /*bottom: 0;*/
-    /*border: 1px solid red;*/
 }
 
 .card-name {
@@ -195,21 +190,16 @@ body {
     right: 0;
     width: 60%;
     height: 90vh;
-    /*top: 10vh;*/
     z-index: 1000;
     overflow: hidden;
     position: absolute;
-    /*border: 1px solid yellow;*/
 }
 
 .single-img {
-    /*position: absolute;*/
     width: 50%;
     height: 80%;
     margin-left: 10%;
     z-index: 1000;
-
-
 }
 
 .single-img-wrapper button {
@@ -217,14 +207,10 @@ body {
     right: 10vh;
     bottom: 10vh;
     background-color: white;
-    /*width: 120px;*/
     height: 70px;
     padding: 25px 32px;
     border-radius: 35px;
-    /*margin-top: -10%;*/
-    /*margin-right: -23%;*/
     z-index: 1000;
-    /*margin: 30% 0;*/
 }
 
 .single-img-next {
@@ -267,7 +253,6 @@ button:focus {
     border-radius: 50%;
     /*box-sizing: border-box;*/
     font-size: 14px;
-    /*border: 1px solid white;*/
 }
 
 .explore-btn-icon i {
