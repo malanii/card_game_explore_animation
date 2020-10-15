@@ -12,7 +12,7 @@ exploreBtn.addEventListener('click', () => {
         gsap.to(".circle", {padding: 1500, x: -5, y: -350, duration: 1});
         gsap.to(".content", {y: -800, opacity: 0.3, duration: 0.1,});
         gsap.to(".main-img", {y: 300, opacity: 0, duration: 0.5,});
-        gsap.fromTo(".content-card", {y: 200, opacity: 0}, {display: 'block', duration: 2, y: 0, opacity: 1});
+        gsap.fromTo(".content-card", {y: 300, opacity: 0}, {display: 'block', duration: 2, y: 0, opacity: 1});
     gsap.fromTo(".top-img",  {y: 0, opacity: 1, },{y: -100, opacity: 0, duration: 1});
         gsap.fromTo(".single-img-wrapper", {y: 600, x: 600, transform: "skew(15deg, -15deg)", opacity: 0},
             {duration: 0.5, display: "flex", y: 0, x: 0, transform: "skew(0deg, -0deg)", opacity: 1, onComplete: fromHomePage});
@@ -101,7 +101,6 @@ function fromHomePage() {
     document.querySelector('.circle').classList.add("circle-position-with-card");
 
     backgroundColor('.wrapper', '#94ceed');
-
     displayShow(elementsFromHomePage);
 }
 

@@ -36,7 +36,7 @@ a:hover {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 6vh 3vh 0 0;
+    padding: 5vh 3vh 0 0;
     /*background-image: url("img/nav_element.png");*/
     background-repeat: no-repeat;
     background-position: right;
@@ -145,9 +145,6 @@ a:hover {
     text-align: left;
     /*margin-left: 20vh;*/
     z-index: 1000;
-    /*margin-top: 20vh;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px){
 
@@ -172,11 +169,7 @@ a:hover {
 .content-card {
     display: none;
     width: 30%;
-    /*margin-left: 20vh;*/
     z-index: 1000;
-    /*margin-top: 20vh;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
 }
 
 .card-name {
@@ -199,16 +192,16 @@ a:hover {
     background-color: white;
     box-sizing: border-box;
     border-radius: 50%;
-    width: 85px;
-    height: 85px;
-    padding: 30px 20px;
+    width: 75px;
+    height: 75px;
+    padding: 27px 20px;
     margin-bottom: 5vh;
 }
 
 .card-number p {
     text-align: center;
     font-family: 'Spartan', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
