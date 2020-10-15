@@ -39,7 +39,7 @@ a:hover {
     background-image: url("img/nav_element.png");
     background-repeat: no-repeat;
     background-position: right;
-    margin-left: 15%;
+    margin-left: 25vh;
 }
 
 .header-logo {
@@ -127,7 +127,7 @@ a:hover {
 }
 
 .title {
-    font-size: 70px;
+    font-size: 65px;
     color: white;
     /*padding: 20% 0 2%;*/
     opacity: 1;
@@ -136,7 +136,7 @@ a:hover {
 .content {
     width: 22%;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 22vh;
     z-index: 1000;
     position: absolute;
     bottom: 0;
@@ -144,14 +144,17 @@ a:hover {
 @media only screen and (min-width: 991px) and (max-width: 1200px){
     .content {
         width: 25%;
-        margin-left: 10%;
+        margin-left: 12vh;
+    }
+    .content-card{
+        margin-left: 12vh;
     }
     .main-img {
-        width: 55%;
-        height: 80vh;
+        width: 50%;
+        height: 70vh;
     }
     .header{
-        margin-left: 10%;
+        margin-left: 14vh;
     }
 }
 @media only screen and (min-width: 720px) and (max-width: 991px){
@@ -162,7 +165,7 @@ a:hover {
 .content-card {
     display: none;
     width: 22%;
-    margin-left: 15%;
+    margin-left: 22vh;
     z-index: 1000;
     position: absolute;
     /*top: 30vh;*/
