@@ -195,7 +195,7 @@ a:hover {
     width: 100px;
     height: 100px;
     padding: 35px 23px;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .card-number p {
@@ -240,7 +240,7 @@ a:hover {
 
 .single-img-next {
     margin-right: -45vh;
-    margin-bottom: -20vh;
+    margin-bottom: -40vh;
 
 }
 
@@ -251,7 +251,7 @@ a:hover {
     background-color: #ffe900;
     border-radius: 40px;
     padding: 5px;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .description {
