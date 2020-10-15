@@ -139,20 +139,24 @@ a:hover {
     margin-left: 15%;
     z-index: 1000;
     position: absolute;
-    bottom: 20vh;
+    bottom: 0;
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px){
     .content {
         width: 25%;
+        margin-left: 10%;
     }
     .main-img {
         width: 55%;
         height: 80vh;
     }
+    .header{
+        margin-left: 10%;
+    }
 }
 @media only screen and (min-width: 720px) and (max-width: 991px){
     .content {
-
+        width: 30%;
     }
 }
 .content-card {
@@ -161,7 +165,8 @@ a:hover {
     margin-left: 15%;
     z-index: 1000;
     position: absolute;
-    top: 30vh;
+    /*top: 30vh;*/
+    bottom: 0;
 }
 
 .card-name {
@@ -187,6 +192,7 @@ a:hover {
     width: 100px;
     height: 100px;
     padding: 35px 23px;
+    margin-bottom: 10vh;
 }
 
 .card-number p {
@@ -230,8 +236,8 @@ a:hover {
 }
 
 .single-img-next {
-    margin-right: -35%;
-    margin-bottom: -20%;
+    margin-right: -45vh;
+    margin-bottom: -20vh;
 
 }
 
@@ -242,6 +248,7 @@ a:hover {
     background-color: #ffe900;
     border-radius: 40px;
     padding: 5px;
+    margin-bottom: 10vh;
 }
 
 .description {
