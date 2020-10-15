@@ -13,6 +13,7 @@ exploreBtn.addEventListener('click', () => {
         gsap.to(".content", {y: -800, opacity: 0.3, duration: 0.1,});
         gsap.to(".main-img", {y: 300, opacity: 0, duration: 0.5,});
         gsap.fromTo(".content-card", {y: 200, opacity: 0}, {display: 'block', duration: 2, y: 0, opacity: 1});
+    gsap.fromTo(".top-img",  {y: 0, opacity: 1, },{y: -100, opacity: 0, duration: 1});
         gsap.fromTo(".single-img-wrapper", {y: 600, x: 600, transform: "skew(15deg, -15deg)", opacity: 0},
             {duration: 0.5, display: "flex", y: 0, x: 0, transform: "skew(0deg, -0deg)", opacity: 1, onComplete: fromHomePage});
     }
@@ -92,33 +93,21 @@ carouselBtn.addEventListener('click', () => {
     }
 });
 
-const elementsFromHomePage = [{className: ".main-img", value: "none"}, {className: ".content", value: "none"}];
+const elementsFromHomePage = [{className: ".main-img", value: "none"}, {className: ".content", value: "none"}, {className: ".top-img", value: "none"}];
 
 function fromHomePage() {
 
     document.querySelector('.circle').classList.remove("circle-homepage");
     document.querySelector('.circle').classList.add("circle-position-with-card");
 
-
-    document.querySelector('.header').style.backgroundImage = 'none';
-
     backgroundColor('.wrapper', '#94ceed');
 
     displayShow(elementsFromHomePage);
-
-    // displayShow('.content','none');
-    // document.querySelector('.wrapper').style.backgroundColor = '#94ceed';
-    // document.querySelector('.main-img').style.display = 'none';
-    // document.querySelector('.content').style.display = 'none';
-
 }
 
 
-const elementsToHomePage = [{className: ".content-card", value: "none"}, {
-    className: ".single-img-wrapper",
-    value: "none"
-},
-    {className: ".main-img", value: "block"}, {className: ".content", value: "block"}];
+const elementsToHomePage = [{className: ".content-card", value: "none"}, {className: ".single-img-wrapper", value: "none"},
+    {className: ".main-img", value: "block"}, {className: ".content", value: "block"},{className: ".top-img", value: "block"}];
 
 
 function toHomePage() {
@@ -129,33 +118,20 @@ function toHomePage() {
         {x: 0, y: 0, padding: "30vh", duration: 1}
     );
 
+    gsap.to(".main-img", {y: 0, opacity: 1, duration: 1.5,});
+    gsap.to(".content", {y: 0, opacity: 1, duration: 1,});
+    gsap.fromTo(".top-img",  {y: -100, opacity: 0, },{y: 0, opacity: 1, duration: 2,});
 
     card.src = cards[0].img;
     cardNext.src = cards[1].img;
+
     cardTitle.innerHTML = cards[0].title;
     cardDesc.innerHTML = cards[0].description;
     cardNumber.innerHTML = cards[0].number;
 
-
-    document.querySelector('.header').style.backgroundImage = 'url("img/nav_element.png")';
-
-    gsap.to(".main-img", {y: 0, opacity: 1, duration: 1.5,});
-    gsap.to(".content", {y: 0, opacity: 1, duration: 1,});
-
     backgroundColor('.wrapper', '#161010');
     backgroundColor('.circle', '#94ceed');
-
-
     displayShow(elementsToHomePage)
-
-
-    // document.querySelector('.circle').style.backgroundColor = '#94ceed';
-    // document.querySelector('.wrapper').style.backgroundColor = '#161010';
-    // document.querySelector(".content-card").style.display='none';
-    // shownCards.style.display='none';
-    // document.querySelector('.main-img').style.display = 'block';
-    // document.querySelector('.content').style.display = 'block';
-
 }
 
 

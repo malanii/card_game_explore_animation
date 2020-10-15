@@ -24,10 +24,11 @@ a:hover {
     top: 0;
     right: 0;
     left: 0;
-    width: 95%;
+    width: 84%;
     height: 84vh;
     border: 1.5vh solid #223744;
     border-radius: 10px;
+    padding-left: 20vh;
     margin: 6vh auto;
     /*z-index: 200000;*/
 }
@@ -35,11 +36,12 @@ a:hover {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 13vh 3vh 0 0;
-    background-image: url("img/nav_element.png");
+    padding: 6vh 3vh 0 0;
+    /*background-image: url("img/nav_element.png");*/
     background-repeat: no-repeat;
     background-position: right;
-    margin-left: 25vh;
+    /*margin-left: 25vh;*/
+    margin-bottom: 10vh;
 }
 
 .header-logo {
@@ -74,10 +76,15 @@ a:hover {
 
 
 .circle-wrapper {
+    width: 100%;
+    height: 100vh;
     position: relative;
     z-index: 1;
 }
-
+.top-img{
+    position: absolute;
+    right: 0;
+}
 .circle-homepage {
     background-color: #94ceed;
     border-radius: 50%;
@@ -134,29 +141,28 @@ a:hover {
 }
 
 .content {
-    width: 22%;
+    width: 28%;
     text-align: left;
-    margin-left: 20vh;
+    /*margin-left: 20vh;*/
     z-index: 1000;
-    margin-top: 20vh;
+    /*margin-top: 20vh;*/
     /*position: absolute;*/
     /*bottom: 0;*/
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px){
+
+   .container{
+       padding-left: 15vh;
+   }
     .content {
         width: 25%;
-        margin-left: 14vh;
-    }
-    .content-card{
-        margin-left: 14vh;
+        /*margin-left: 14vh;*/
     }
     .main-img {
         width: 50%;
         height: 70vh;
     }
-    .header{
-        margin-left: 14vh;
-    }
+
 }
 @media only screen and (min-width: 720px) and (max-width: 991px){
     .content {
@@ -165,17 +171,17 @@ a:hover {
 }
 .content-card {
     display: none;
-    width: 22%;
-    margin-left: 20vh;
+    width: 30%;
+    /*margin-left: 20vh;*/
     z-index: 1000;
-    margin-top: 20vh;
+    /*margin-top: 20vh;*/
     /*position: absolute;*/
     /*bottom: 0;*/
 }
 
 .card-name {
     font-family: 'Spartan', sans-serif;
-    font-size: 70px;
+    font-size: 65px;
     color: black;
     padding: 7% 0 2%;
     font-weight: 500;
@@ -193,9 +199,9 @@ a:hover {
     background-color: white;
     box-sizing: border-box;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 35px 23px;
+    width: 85px;
+    height: 85px;
+    padding: 30px 20px;
     margin-bottom: 5vh;
 }
 
